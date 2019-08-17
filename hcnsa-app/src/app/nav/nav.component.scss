@@ -1,0 +1,14 @@
+@import "src/_more-scss/variables.scss";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+.logo-wrapper {
+  // make the logo logo-sized
+  @include imageWrap(7rem, 7rem);
+}

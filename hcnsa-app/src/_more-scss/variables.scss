@@ -1,0 +1,10 @@
+// @import 'src/_more-scss/variables.scss'; --> copy this link  to other files
+@mixin imageWrap($width: 30vw, $height: 30vh) {
+  // allow the image size and position to be controlled by the div
+  position: relative;
+  // crop images if they are bigger than the image-wrapper div
+  overflow: hidden;
+  // aspect ration look for mobile
+  width: $width;
+  height: $height;
+}

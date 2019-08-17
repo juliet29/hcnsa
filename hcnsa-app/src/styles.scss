@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+// base fonts
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,700&display=swap");
+
+// fancy font
+@import url("https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap");
+
+// other scss modules
+@import "src/_more-scss/variables.scss";
+//@import "../node_modules/rfs/scss";
+
+* {
+  // make the padding and margin make more sense
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+// probably not the best place for this -- depends on structure of app
+.image-wrapper {
+  @include imageWrap(100vw, 30vh);
+}
+
+img {
+  // allow image size and position to be controlled by the div
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/** Reset button, link, and list styles**/
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+  color: darkcyan; //random color here
+}
+
+ul {
+  list-style-type: none;
+}
