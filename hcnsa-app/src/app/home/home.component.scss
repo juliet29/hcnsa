@@ -1,0 +1,28 @@
+@import "src/_more-scss/variables.scss";
+
+button {
+    @include trad-button(#324a5f)
+}
+
+section {
+    background-color: #324a5f;
+    font-family: "Roboto", sans-serif;
+    color: darken( #201f1e, 10%);
+    padding: 1.5rem;
+}
+
+h2 a {
+    @include cute-link(#201f1e, #4da167, #caffb9);
+}
+
+a {
+    @include reg-link(#201f1e);
+}
+
+h1 {
+    @include header1(right, #4da167);
+}
+
+h2 {
+    @include header2();
+}
