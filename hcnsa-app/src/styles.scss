@@ -46,6 +46,9 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+  // take the width and height of the div inside the button
+  width: min-content;
+  height: min-content;
 }
 
 button:disabled {
