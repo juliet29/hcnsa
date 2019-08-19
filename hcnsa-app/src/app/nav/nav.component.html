@@ -5,6 +5,7 @@
   ></a>
 
   <nav>
+
     <button (click)="openNav()" class="nav-button"><div>MENU</div></button>
     <div class="nav-background">
       <!-- .button-container just positions the button on the right bc float wasn't working -->
@@ -15,20 +16,25 @@
       </div>
       <ul class="nav-menu">
         <li>
+          <button class="nav-button"><div>MENU</div></button>
+        </li>
+        <li>
           <a routerLink="/">ABOUT</a>
         </li>
         <li>
+
           <a routerLink="/">INITIATIVES</a>
         </li>
         <li>
           <a routerLink="/">BOARD</a>
         </li>
         <li>
-          <a routerLink="/">GALA</a>
+          <a routerLink="/gala">GALA</a>
         </li>
         <li>
           <a routerLink="/">CONTACT US</a>
           <div class="nav-email">(harvardnsa10@gmail.com)</div>
+
         </li>
       </ul>
     </div>
