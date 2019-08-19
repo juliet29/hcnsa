@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600&display=swap");
 // @import 'src/_more-scss/variables.scss'; --> copy this link  to other files
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600&display=swap");
+
+// define colors as variables here :)
 
 @mixin imageWrap($width: 30vw, $height: 30vh) {
   // allow the image size and position to be controlled by the div
@@ -14,7 +17,7 @@
 @mixin bold-button($color) {
   color: $color;
   border: none;
-  display:inline-block;
+  display: inline-block;
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   text-transform: uppercase;
@@ -32,7 +35,7 @@
   background-color: $bg-color;
   color: rgba(255, 255, 255, 0.705);
   border: 0.1rem solid rgba(255, 255, 255, 0.705);
-  display:inline-block;
+  display: inline-block;
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   text-transform: uppercase;
@@ -70,7 +73,7 @@
   }
 
   &:hover:after {
-    width: 100%; 
+    width: 100%;
     left: 0;
   }
 }
@@ -81,7 +84,11 @@
   margin: 0.2rem;
   text-transform: none;
   font-style: normal;
-  background-image: linear-gradient(120deg, #{$grad-color-1} 0%, #{$grad-color-2} 100%);
+  background-image: linear-gradient(
+    120deg,
+    #{$grad-color-1} 0%,
+    #{$grad-color-2} 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -100,14 +107,14 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
 
   &:hover {
     background-size: 100% 2px;
   }
 }
 
-@mixin header1 ($align, $shadow) {
+@mixin header1($align, $shadow) {
   color: rgba(255, 255, 255, 0.555);
   text-shadow: 2px 2px #{$shadow};
   font-size: 2.5rem;
