@@ -16,6 +16,8 @@ header {
   padding-left: 1rem;
   padding-right: 2rem;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #324a5f;
 }
 
 .logo-wrapper {
@@ -23,6 +25,25 @@ header {
   @include imageWrap(7rem, 7rem);
 }
 
+// jordan's changes start here 
+ul li {
+  display: inline-block;
+}
+
+nav a {
+  @include nav-link(#caffb9)
+}
+
+button {
+  @include bold-button(rgba(255, 255, 255, 0.705));
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  padding: 0.5rem;
+  position: relative;
+  margin: 0.25rem;
+}
+// and end here
 .nav-background {
   // put the navigation on top of everything
   position: absolute;
@@ -66,3 +87,4 @@ header {
 .nav-button-close {
   padding: 2rem 1rem;
 }
+
