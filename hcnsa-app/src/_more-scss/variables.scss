@@ -16,7 +16,6 @@
   border: none;
   display:inline-block;
   padding: 0.2rem 0.4rem;
-  border-radius: 0.25rem;
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
@@ -78,7 +77,6 @@
 @mixin cute-link($color, $grad-color-1, $grad-color-2) {
   color: $color;
   padding: 0.2rem;
-  margin: 0.2rem;
   text-transform: none;
   font-style: normal;
   background-image: linear-gradient(120deg, #{$grad-color-1} 0%, #{$grad-color-2} 100%);
@@ -108,7 +106,7 @@
 }
 
 @mixin header1 ($align, $shadow) {
-  color: rgba(255, 255, 255, 0.555);
+  color: white;
   text-shadow: 2px 2px #{$shadow};
   font-size: 2.5rem;
   text-align: $align;
@@ -120,4 +118,5 @@
   text-transform: uppercase;
   font-style: italic;
   font-variant: small-caps;
+  padding: 0.2rem 0.75rem;
 }
