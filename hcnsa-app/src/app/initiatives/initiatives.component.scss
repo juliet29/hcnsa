@@ -1,0 +1,38 @@
+// using read more button method
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  position: relative;
+  margin: 0 auto 0 1rem;
+  width: 75vw;
+  background-color: #4da167;
+  padding: 1rem;
+  box-shadow: 1px 1px #201f1e;
+}
+
+.perk-list {
+  font-style: italic;
+}
+
+.perk-text-1 {
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.perk-text-2 {
+  font-weight: lighter;
+  color: white;
+}
