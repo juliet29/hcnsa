@@ -89,6 +89,11 @@ button {
 
 h2 a {
   @include cute-link(#201f1e, #4da167, #caffb9);
+  padding: 0.2rem;
+  margin-bottom: 2px;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 a {
@@ -101,4 +106,16 @@ h1 {
 
 h2 {
   @include header2();
+}
+
+.pgraph-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  // padding: 1rem;
+}
+
+.pgraph-btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  // padding: 1rem;
 }
