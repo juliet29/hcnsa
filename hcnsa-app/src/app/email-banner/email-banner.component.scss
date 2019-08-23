@@ -1,0 +1,20 @@
+@import "src/_more-scss/variables.scss";
+
+.emailBanner {
+  background-color: yellowgreen;
+  margin: 3rem 0;
+  padding: 0.5rem 0.3rem;
+  text-align: center;
+  box-shadow: $boxShadow;
+}
+
+input {
+  @include modern-input();
+  width: 80vw;
+  margin-bottom: 0.8rem;
+}
+
+.emailBanner-button {
+  @include trad-button(green);
+  width: 6rem;
+}
