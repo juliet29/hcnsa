@@ -17,6 +17,9 @@ body,
 html {
   height: 100%;
   margin: 0 0;
+  // get rid of that horizantal scroll
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -40,7 +43,7 @@ img {
   width: 100%;
 }
 
-/** Reset button, link, and list styles**/
+/************* Reset button, link, and list styles *************/
 button {
   padding: 0;
   border: none;
@@ -66,12 +69,13 @@ ul {
   list-style-type: none;
 }
 
-// social media icons
-// all viewbpxes are viewBox="0 0 100 100"
+/************* social media icons *************/
+// all viewboxes are viewBox="0 0 100 100"
 .icon-svg {
-  border: 1px solid orange;
-  width: 2rem;
-  height: 2rem;
+  //border: 1px solid orange; -- use to see where the canvas for the svg is
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.3rem;
 }
 
 .insta-svg-path {
@@ -82,11 +86,14 @@ ul {
   transform: scale(1.1, 1.1);
 }
 
-// global styles
-button {
-  @include trad-button(#324a5f);
-}
+/************* global styles *************/
 
+// include on a case by case basis
+// button {
+//   @include trad-button(#324a5f);
+// }
+
+// change later to be included on a case by case basis
 h2 a {
   @include cute-link(#201f1e, #4da167, #caffb9);
   padding: 0.2rem;
@@ -102,12 +109,14 @@ a {
 
 h1 {
   @include header1(right, #4da167);
+  margin: 0;
 }
 
 h2 {
   @include header2();
+  margin: 0;
 }
-
+/// not these though
 .pgraph-link {
   font-weight: bold;
   text-transform: uppercase;

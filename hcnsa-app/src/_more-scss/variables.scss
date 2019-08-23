@@ -4,6 +4,13 @@
 
 // define colors as variables here :)
 
+// global scss variables
+$headerZ: 100;
+$headerHeight: 7rem;
+
+// elemnt add ons
+$boxShadow: 0px 1px 2px rgba(43, 41, 41, 0.212);
+
 @mixin imageWrap($width: 30vw, $height: 30vh) {
   // allow the image size and position to be controlled by the div
   position: relative;
@@ -33,10 +40,10 @@
 @mixin trad-button($bg-color) {
   background-color: $bg-color;
   color: rgba(255, 255, 255, 0.705);
-  border: 0.1rem solid rgba(255, 255, 255, 0.705);
+  //border: 0.1rem solid rgba(255, 255, 255, 0.705);
   display: inline-block;
   padding: 0.2rem 0.4rem;
-  border-radius: 0.25rem;
+  //border-radius: 0.25rem;
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
@@ -114,7 +121,6 @@
 
 @mixin header1($align, $shadow) {
   color: white;
-
   text-shadow: 2px 2px #{$shadow};
   font-size: 2.5rem;
   text-align: $align;
@@ -127,4 +133,14 @@
   font-style: italic;
   font-variant: small-caps;
   padding: 0.2rem 0.75rem;
+}
+
+// make the input fields look modern
+@mixin modern-input() {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
 }

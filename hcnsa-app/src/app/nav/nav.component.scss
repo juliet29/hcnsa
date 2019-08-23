@@ -1,6 +1,5 @@
 @import "src/_more-scss/variables.scss";
 
-$headerZ: 100;
 // the header containes the logo and the navigation menu
 header {
   // make the header sticky
@@ -9,7 +8,6 @@ header {
   // give the header a fixed height and width
   height: 7rem;
   width: 100vw;
-  background-color: pink;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,13 +23,13 @@ header {
   @include imageWrap(7rem, 7rem);
 }
 
-// jordan's changes start here 
+// jordan's changes start here
 ul li {
   display: inline-block;
 }
 
 nav a {
-  @include nav-link(#caffb9)
+  @include nav-link(#caffb9);
 }
 
 nav button {
@@ -98,4 +96,3 @@ nav button {
 .nav-button-close {
   padding: 2rem 1rem;
 }
-
