@@ -1,0 +1,126 @@
+
+@import "src/_more-scss/variables.scss";
+
+button {
+    @include trad-button(#324a5f)
+}
+
+section {
+    background-color: #324a5f;
+    font-family: "Roboto", sans-serif;
+    color: darken( #201f1e, 10%);
+    padding: 1.5rem;
+    margin: auto;
+}
+
+h2 a {
+    @include cute-link(#201f1e, #4da167, #caffb9);
+    padding: 0.2rem;
+    margin-bottom: 2px;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a {
+    @include reg-link(#201f1e);
+}
+
+h1 {
+    @include header1(right, #4da167);
+}
+
+h2 {
+    @include header2();
+}
+
+.about-pgraph {
+    padding: 1.5rem;
+    color: #4c8667;
+    // font-variant: small-caps;
+    font-weight: 100;
+    text-align: left;
+    font-family: neue-haas-unica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+}
+
+.NSA-text {
+    color: #4da167;
+}
+
+.inititaitves-pgraph {
+    font-family: neue-haas-unica, sans-serif;
+    font-size: 1.2rem;
+    padding: 0rem 1.2rem;
+    color: #201f1e;
+}
+
+// using read more button method
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    position: relative;
+    margin: 0 auto 0 1rem;
+    width: 75vw;
+    background-color: #4da167;
+    padding: 1rem;
+    box-shadow: 1px 1px #201f1e;
+}
+
+.perk-list {
+    font-style: italic
+}
+
+.perk-text-1 {
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+.perk-text-2 {
+    font-weight: lighter;
+    color: white;
+}
+
+.gala-pgraph {
+    color: #201f1e;
+    padding: 0rem 1.5rem 1.5rem;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: lighter;
+}
+
+.gala-text {
+    position: relative;
+    margin: 0 auto;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 1rem;
+    box-shadow: 2px 2px #201f1e;
+}
+
+.pgraph-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.pgraph-btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+

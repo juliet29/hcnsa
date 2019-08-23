@@ -34,15 +34,26 @@ nav a {
   @include nav-link(#caffb9)
 }
 
-button {
+nav button {
   @include bold-button(rgba(255, 255, 255, 0.705));
   font-weight: 500;
   letter-spacing: 0.15rem;
   display: inline-block;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
   margin: 0.25rem;
 }
+
+.nav-text {
+  color: rgba(255, 255, 255, 0.705);
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  margin: 0.25rem;
+}
+
 // and end here
 .nav-background {
   // put the navigation on top of everything
