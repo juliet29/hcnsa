@@ -15,7 +15,7 @@ header {
   padding-right: 2rem;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  background-color: #324a5f;
+  background-color: $bodyColor;
 }
 
 .logo-wrapper {
@@ -29,11 +29,11 @@ ul li {
 }
 
 nav a {
-  @include nav-link(#caffb9);
+  @include nav-link(black);
 }
 
 nav button {
-  @include bold-button(rgba(255, 255, 255, 0.705));
+  @include bold-button($offWhite);
   font-weight: 500;
   letter-spacing: 0.15rem;
   display: inline-block;
@@ -43,7 +43,7 @@ nav button {
 }
 
 .nav-text {
-  color: rgba(255, 255, 255, 0.705);
+  color: $offWhite;
   font-weight: 500;
   letter-spacing: 0.15rem;
   display: inline-block;
@@ -63,7 +63,7 @@ nav button {
   left: 0;
   // send the navigation off the page
   margin-left: 200vw;
-  background-color: greenyellow;
+  background-color: $superNeonGreen;
   display: flex;
   flex-direction: column;
 }

@@ -1,7 +1,7 @@
 @import "src/_more-scss/variables.scss";
 
 .emailBanner {
-  background-color: yellowgreen;
+  background-color: $neonGreen;
   margin: 3rem 0;
   padding: 0.5rem 0.3rem;
   text-align: center;
@@ -15,6 +15,6 @@ input {
 }
 
 .emailBanner-button {
-  @include trad-button(green);
+  @include trad-button($deepGreen);
   width: 6rem;
 }

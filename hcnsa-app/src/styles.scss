@@ -25,9 +25,9 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background-color: #324a5f;
+  background-color: $bodyColor;
   font-family: "Roboto", sans-serif;
-  color: darken(#201f1e, 10%);
+  color: darken($gray, 10%);
 }
 
 // probably not the best place for this -- depends on structure of app
@@ -62,7 +62,7 @@ button:disabled {
 
 a {
   text-decoration: none;
-  color: darkcyan; //random color here
+  color: $mint; //random color here
 }
 
 ul {
@@ -97,7 +97,7 @@ ul {
 
 // change later to be included on a case by case basis
 h2 a {
-  @include cute-link(#201f1e, #4da167, #caffb9);
+  @include cute-link($gray, $deepGreen, $mint);
   padding: 0.2rem;
   margin-bottom: 2px;
   font-family: neue-haas-unica, sans-serif;
@@ -106,11 +106,11 @@ h2 a {
 }
 
 a {
-  @include reg-link(#201f1e);
+  @include reg-link($gray);
 }
 
 h1 {
-  @include header1(right, #4da167);
+  @include header1(right, $deepGreen);
   margin: 0;
 }
 
