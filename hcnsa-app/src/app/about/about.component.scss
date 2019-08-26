@@ -1,6 +1,8 @@
+@import "src/_more-scss/variables.scss";
+
 .about-pgraph {
   padding: 1.5rem;
-  color: #4c8667;
+  color: $deepGreen;
   // font-variant: small-caps;
   font-weight: 100;
   text-align: left;
@@ -10,5 +12,5 @@
 }
 
 .NSA-text {
-  color: #4da167;
+  color: $deepGreen;
 }

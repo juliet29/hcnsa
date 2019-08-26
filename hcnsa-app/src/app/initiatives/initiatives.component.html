@@ -8,38 +8,21 @@
     short and wide image here!
     <img src="../assets/img/apple.jpeg" />
   </div>
-  <div class="image-wrapper">
+  <!-- <div class="image-wrapper">
     square image here!
     <img src="../assets/img/apple.jpeg" />
-  </div>
+  </div> -->
   <div class="initiatives-links">
-    <h2>▷ <a>Mentorship</a></h2>
-    <div class="inititaitves-pgraph">
-      <p>
-        Some text about each initiative will go here. Ideally it will be fairly
-        substantial.
-      </p>
-    </div>
-    <h2>▷ <a>Naija Feels</a></h2>
-    <div class="inititaitves-pgraph">
-      <p>
-        Some text about each initiative will go here. Ideally it will be fairly
-        substantial.
-      </p>
-    </div>
-    <h2>▷ <a>Internships Across</a></h2>
-    <div class="inititaitves-pgraph">
-      <p>
-        Some text about each initiative will go here. Ideally it will be fairly
-        substantial.
-      </p>
-    </div>
-    <h2>▷ <a>Nigerian Collegiate Conf.</a></h2>
-    <div class="inititaitves-pgraph">
-      <p>
-        Some text about each initiative will go here. Ideally it will be fairly
-        substantial.
-      </p>
-    </div>
+    <ul>
+      <li *ngFor="let initiative of initiatives">
+        <h2>
+          ▷<a>{{ initiative }}</a>
+        </h2>
+        <div class="inititaitves-pgraph">
+          Some text about each initiative will go here. Ideally it will be
+          fairly substantial.
+        </div>
+      </li>
+    </ul>
   </div>
 </section>

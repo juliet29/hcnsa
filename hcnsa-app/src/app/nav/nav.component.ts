@@ -15,14 +15,11 @@ export class NavComponent implements OnInit {
   openNav() {
     // this.showNav = true;
     let nav = document.querySelector(".nav-background");
-    console.log(nav.classList);
     nav.classList.add("nav-visible");
   }
 
   closeNav() {
     let nav = document.querySelector(".nav-background");
-    console.log(nav.classList);
     nav.classList.remove("nav-visible");
-    console.log(nav.classList);
   }
 }
