@@ -67,12 +67,14 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /************* social media icons *************/
 // all viewboxes are viewBox="0 0 100 100"
 .icon-svg {
-  //border: 1px solid orange; -- use to see where the canvas for the svg is
+  //border: 1px solid orange; // use to see where the canvas for the svg is
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 0.3rem;
@@ -114,6 +116,10 @@ h1 {
 
 h2 {
   @include header2();
+  margin: 0;
+}
+
+h3 {
   margin: 0;
 }
 /// not these though

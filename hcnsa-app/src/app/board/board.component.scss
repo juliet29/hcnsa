@@ -1,0 +1,34 @@
+@import "src/_more-scss/variables.scss";
+
+.board-position-item {
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-bottom: 0.3rem;
+  background-color: rgb(118, 180, 25);
+}
+
+.board-description {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.board-description-title {
+  display: flex;
+}
+
+.linkedin-svg {
+  margin-left: 0;
+}
+
+.linkedin-svg-path {
+  transform: scale(2, 2);
+}
+.image-wrapper {
+  @include imageWrap(40vw, 20vh);
+}
+
+.board-description-pgraph {
+  text-align: left;
+  font-size: 0.8rem;
+  /* width: 10rem; */
+  padding-right: 1rem;
+}
